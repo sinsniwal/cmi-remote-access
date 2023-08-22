@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WWW="$HOME/.www"
-NAME=$(curl -s "https://www.cmi.ac.in/people/student-profile.php?id=$USER" | grep -oP "(?<=<div class="profile_name">)[^<]+")
+NAME=$(curl -s "https://www.cmi.ac.in/people/student-profile.php?id=$USER" | grep -oP '(?<=<div class="profile_name">)[^<]+')
 
 mkdir -p $WWW
 
