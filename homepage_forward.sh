@@ -2,7 +2,7 @@
 
 WWW="$HOME/.www"
 
-read -p "Enter url to forward to: " url
+read -p "Enter url to forward to: " url </dev/tty
 
 mkdir -p $WWW
 
