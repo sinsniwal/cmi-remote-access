@@ -2,7 +2,7 @@
 
 Automation scripts to handle various tasks for CMI Remote Access
 
-_Note: Run the scripts on a CS Lab Machine or the Access Server (access2.cmi.ac.in) via ssh_
+_Note: Run the bash scripts on a CS Lab Machine or the Access Server (access2.cmi.ac.in) via ssh_
 
 ## SSH
 
@@ -14,6 +14,19 @@ curl -sSfl https://raw.githubusercontent.com/arghyadipchak/cmi-remote-access/mai
 You will receive an email with the key file `cmi.key`, download it on your machine. Now you can ssh to the access server from your machine using:
 ```sh
 ssh -I <path-to-key-file> <username>@access2.cmi.ac.in
+```
+
+You can also add the following to your ssh config\
+_Windows: `C:\Users\<USERNAME>\.ssh\config`, Unix: `$HOME/.ssh/config`_
+```
+Host cmi
+  HostName access2.cmi.ac.in
+  IdentityFile <path-to-key-file>
+  User <username>
+```
+then you can simply ssh using:
+```sh
+ssh cmi
 ```
 
 ## Email Forwarding
