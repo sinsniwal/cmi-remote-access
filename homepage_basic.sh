@@ -18,5 +18,5 @@ cat >"$WWW/index.html" <<EOM
 </html>
 EOM
 
-chmod -R +r $WWW
-chmod +x $WWW
+chmod -R a+r $WWW
+chmod a+x $WWW
