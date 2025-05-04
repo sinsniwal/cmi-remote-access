@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WWW="$HOME/.www"
+WWW="/home/studentswww/$USER"
 
 read -p "Enter url to forward to: " url </dev/tty
 
