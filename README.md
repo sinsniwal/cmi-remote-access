@@ -43,7 +43,8 @@ To setup a basic homepage, run:
 curl -sSfl https://raw.githubusercontent.com/arghyadipchak/cmi-remote-access/main/homepage_basic.sh | bash
 ```
 
-You can then edit the `~/.www/index.html` as needed
+Email sysadm@cmi.ac.in, so that they can create <username> folder in /home/studentswww/
+Once created, you can then edit the `/home/studentswww/<username>/index.html` as needed
 
 To setup a homepage that redirects to another website, run:
 ```sh
